@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.esteralice.sp.todolist.controller.IndexController">
+   <children>
+      <Label layoutX="25.0" layoutY="14.0" text="Data de Realização">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="76.0" prefHeight="17.0" prefWidth="71.0" text="Tarefa :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTarefa" layoutX="14.0" layoutY="113.0" prefHeight="89.0" prefWidth="465.0" promptText="Descreva a tarefa" AnchorPane.rightAnchor="121.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dpTarefa" layoutX="7.0" layoutY="35.0" />
+      <Label layoutX="377.0" layoutY="14.0" text="Status :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfStatus" layoutX="371.0" layoutY="35.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="10.0" layoutY="217.0" prefHeight="17.0" prefWidth="101.0" text="Comentários :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfComentarios" layoutX="14.0" layoutY="252.0" prefHeight="156.0" prefWidth="413.0" promptText="Coloque comentários sobre a tarefa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btSalvar" layoutX="55.0" layoutY="506.0" mnemonicParsing="false" onAction="#btSalvarClick" prefHeight="58.0" prefWidth="57.0" style="-fx-background-color: #00BFFF;" text="Button" textFill="#0a0a0a" />
+      <Button fx:id="btAdiar" layoutX="170.0" layoutY="508.0" mnemonicParsing="false" onAction="#btAdiarClick" prefHeight="61.0" prefWidth="55.0" style="-fx-background-color: #87CEFA;" text="Button" />
+      <Button fx:id="btConcluido" layoutX="273.0" layoutY="506.0" mnemonicParsing="false" onAction="#btConcluidoClick" prefHeight="61.0" prefWidth="55.0" style="-fx-background-color: #87CEEB;" text="Button" />
+      <Button fx:id="btExcluir" layoutX="381.0" layoutY="508.0" mnemonicParsing="false" onAction="#btExcluirClick" prefHeight="57.0" prefWidth="55.0" style="-fx-background-color: #4682B4;" text="Button" />
+      <Button fx:id="btLimpar" layoutX="502.0" layoutY="508.0" mnemonicParsing="false" onAction="#btLimparClick" prefHeight="61.0" prefWidth="61.0" style="-fx-background-color: #1E90FF;" text="Button" />
+      <ImageView fitHeight="57.0" fitWidth="45.0" layoutX="61.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/EsterDevSistCaio/Ling_marc/css/imagen/salvar-ícone-de-disco-flexível-o-botão-quadrado-azul-89658451.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="176.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/EsterDevSistCaio/Ling_marc/css/imagen/vetorial-julgamento-ilustração-data-adiamento-ícone-esboço-vetor-cliparte_csp80082751.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="45.0" layoutX="278.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/EsterDevSistCaio/Ling_marc/css/imagen/istockphoto-1128099605-170667a.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="386.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/EsterDevSistCaio/Ling_marc/css/imagen/download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="42.0" layoutX="515.0" layoutY="518.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/EsterDevSistCaio/Ling_marc/css/imagen/wipe-97583_960_720.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
